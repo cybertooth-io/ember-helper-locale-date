@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import formatUtil from '../utils/format-util';
 
 /**
  * The formatting options for the default Locale.
@@ -23,14 +24,7 @@ const defaultOptions = {
 const formatter = new Intl.DateTimeFormat(undefined, defaultOptions);
 
 export function dateFormatLT([date], options) {
-  if (Ember.isEmpty(date) || Ember.typeOf(date) !== 'date') {
-    return '';
-  }
-  if (Ember.$.isEmptyObject(options)) {
-    return formatter.format(date);
-  } else {
-    return date.toLocaleString(undefined, Ember.$.extend(defaultOptions, options));
-  }
+  return formatUtil(formatter, defaultOptions, date, options);
 }
 
 export default Ember.Helper.helper(dateFormatLT);
