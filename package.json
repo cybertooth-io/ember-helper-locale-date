@@ -1,7 +1,7 @@
 {
   "name": "ember-helper-locale-date",
   "version": "1.0.0-rc.0",
-  "description": "Three helpers optimized to format numbers according to the website visitor's locale.",
+  "description": "Several helpers optimized to format dates natively according to the website visitor's locale.",
   "keywords": [
     "format",
     "locale",
