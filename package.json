@@ -1,17 +1,40 @@
 {
   "name": "ember-helper-locale-date",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "1.0.0-rc.0",
+  "description": "Three helpers optimized to format numbers according to the website visitor's locale.",
   "keywords": [
+    "format",
+    "locale",
+    "Intl.DateTimeFormat",
+    "time format",
+    "date format",
+    "cybertooth",
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
+  "author": {
+    "name": "cybertooth.io",
+    "email": "dev@cybertooth.io",
+    "url": "http://cybertooth.io"
+  },
+  "contributors": [
+    {
+      "name": "Dan Nelson",
+      "email": "dan@cybertooth.io",
+      "url": "https://nadnoslen.github.io/"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/cybertoothca/ember-helper-locale-date/issues"
+  },
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cybertoothca/ember-helper-locale-date.git"
+  },
   "scripts": {
     "build": "ember build",
     "start": "ember server",
@@ -30,6 +53,7 @@
     "ember-cli-htmlbars-inline-precompile": "^0.4.3",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-qunit": "^4.0.0",
+    "ember-cli-release": "^1.0.0-beta.2",
     "ember-cli-shims": "^1.1.0",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^1.2.0",
@@ -44,6 +68,7 @@
     "node": "^4.5 || 6.* || >= 7.*"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "demoURL": "http://docs.ember-helper-locale-date.cybertooth.io/#hbs"
   }
 }
