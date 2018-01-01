@@ -80,7 +80,7 @@
   "ember-addon": {
     "configPath": "tests/dummy/config",
     "demoURL": "http://ember-helper-locale-date.cybertooth.io",
-    "docsURL": "http://docs.ember-helper-locale-date.cybertooth.io/#hbs",
-    "docURL": "http://docs.ember-helper-locale-date.cybertooth.io/#hbs"
+    "docsURL": "http://docs.ember-helper-locale-date.cybertooth.io",
+    "docURL": "http://docs.ember-helper-locale-date.cybertooth.io"
   }
 }
