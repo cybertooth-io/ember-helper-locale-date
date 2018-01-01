@@ -81,7 +81,7 @@ Regardless of the helper, non-date arguments will return empty string.
 ```handlebars {% raw %}
 {{date-format-lt}}  {{!-- "" --}}
 
-{{date-format-l "abc"}}  {{!-- "" --}}
+{{date-short-l "abc"}}  {{!-- "" --}}
 
 {{date-format-llll 123}}  {{!-- "" --}}
 ``` {% endraw %}
@@ -97,6 +97,20 @@ vistor's locale is "en_US" and their timezone is "America/New_York".
 import { dateFormatLt } from 'ember-helper-locale-date/helpers/date-format-lt';
 // ... somewhere in your js:
 dateFormatLt(new Date(Date.UTC(2001, 8, 11, 12, 46, 40))); // "8:46 AM"
+```
+
+```javascript
+// using the dateFormatL helper
+import { dateFormatL } from 'ember-helper-locale-date/helpers/date-format-l';
+// ... somewhere in your js:
+dateFormatL(new Date(Date.UTC(2001, 8, 11, 12, 46, 40))); // "09/11/2001"
+```
+
+```javascript
+// using the dateShortLL helper
+import { dateShortLL } from 'ember-helper-locale-date/helpers/date-short-ll';
+// ... somewhere in your js:
+dateShortLL(new Date(Date.UTC(2001, 8, 11, 12, 46, 40))); // "Sep 11, 2001"
 ```
 
 </section>

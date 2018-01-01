@@ -14,6 +14,11 @@
         src="http://emberobserver.com/badges/ember-helper-locale-date.svg" alt="ember-observer-badge"/></a> <a
         href="https://github.com/cybertoothca/ember-helper-locale-date/blob/master/LICENSE.md" target="_blank"><img
         src="http://img.shields.io/npm/l/ember-helper-locale-date.svg" alt="License"/></a></p>
+  </div>
+</section>
+<hr/>
+<section>
+  <div class="container">
     <h2>Installation</h2>
     <pre>$ ember install ember-helper-locale-date</pre>
   </div>
@@ -30,6 +35,11 @@
       <dt>Date (Local)</dt>
       <dd>{{date}}</dd>
     </dl>
+
+    <hr/>
+
+    <h3>Times</h3>
+
     <dl class="dl-horizontal">
       <dt>LT</dt>
       <dd>
@@ -37,13 +47,57 @@
         <i class="fa fa-fw fa-long-arrow-right"></i>
         <code>"{{date-format-lt date}}"</code>
       </dd>
+      <dt>LTz (Local)</dt>
+      <dd>
+        <code>\{{date-format-ltz date}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-ltz date}}"</code>
+      </dd>
+      <dt>LTz (New York)<sup>1</sup></dt>
+      <dd>
+        <code>\{{date-format-ltz date timeZone="America/New_York"}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-ltz date timeZone="America/New_York"}}"</code>
+      </dd>
+      <dt>LTz (Vancouver)<sup>1</sup></dt>
+      <dd>
+        <code>\{{date-format-ltz date timeZone="America/Vancouver"}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-ltz date timeZone="America/Vancouver"}}"</code>
+      </dd>
+    </dl>
+
+    <dl class="dl-horizontal">
       <dt>LTS</dt>
       <dd>
         <code>\{{date-format-lts date}}</code>
         <i class="fa fa-fw fa-long-arrow-right"></i>
         <code>"{{date-format-lts date}}"</code>
       </dd>
+      <dt>LTSz (Local)</dt>
+      <dd>
+        <code>\{{date-format-ltsz date}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-ltsz date}}"</code>
+      </dd>
+      <dt>LTSz (New York)<sup>1</sup></dt>
+      <dd>
+        <code>\{{date-format-ltsz date timeZone="America/New_York"}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-ltsz date timeZone="America/New_York"}}"</code>
+      </dd>
+      <dt>LTSz (Vancouver)<sup>1</sup></dt>
+      <dd>
+        <code>\{{date-format-ltsz date timeZone="America/Vancouver"}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-ltsz date timeZone="America/Vancouver"}}"</code>
+      </dd>
     </dl>
+
+    <hr/>
+
+    <h3><strong><em>LONG</em></strong> Form</h3>
+
     <dl class="dl-horizontal">
       <dt>L</dt>
       <dd>
@@ -140,6 +194,109 @@
         <code>\{{date-format-llllz date timeZone="America/Vancouver"}}</code>
         <i class="fa fa-fw fa-long-arrow-right"></i>
         <code>"{{date-format-llllz date timeZone="America/Vancouver"}}"</code>
+      </dd>
+    </dl>
+
+    <hr/>
+
+    <h3><strong><em>short</em></strong> Form</h3>
+
+    <dl class="dl-horizontal">
+      <dt>l</dt>
+      <dd>
+        <code>\{{date-short-l date}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-short-l date}}"</code>
+      </dd>
+      <dt>ll</dt>
+      <dd>
+        <code>\{{date-short-ll date}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-short-ll date}}"</code>
+      </dd>
+    </dl>
+
+    <dl class="dl-horizontal">
+      <dt>lll</dt>
+      <dd>
+        <code>\{{date-short-lll date}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-short-lll date}}"</code>
+      </dd>
+      <dt>lll (New York)<sup>1</sup></dt>
+      <dd>
+        <code>\{{date-short-lll date timeZone="America/New_York"}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-short-lll date timeZone="America/New_York"}}"</code>
+      </dd>
+      <dt>lll (Vancouver)<sup>1</sup></dt>
+      <dd>
+        <code>\{{date-short-lll date timeZone="America/Vancouver"}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-short-lll date timeZone="America/Vancouver"}}"</code>
+      </dd>
+    </dl>
+
+    <dl class="dl-horizontal">
+      <dt>lllz (Local)</dt>
+      <dd>
+        <code>\{{date-short-lllz date}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-short-lllz date}}"</code>
+      </dd>
+      <dt>lllz (New York)<sup>1</sup></dt>
+      <dd>
+        <code>\{{date-short-lllz date timeZone="America/New_York"}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-short-lllz date timeZone="America/New_York"}}"</code>
+      </dd>
+      <dt>lllz (Vancouver)<sup>1</sup></dt>
+      <dd>
+        <code>\{{date-short-lllz date timeZone="America/Vancouver"}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-short-lllz date timeZone="America/Vancouver"}}"</code>
+      </dd>
+    </dl>
+
+    <dl class="dl-horizontal">
+      <dt>llll (Local)</dt>
+      <dd>
+        <code>\{{date-short-llll date}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-short-llll date}}"</code>
+      </dd>
+      <dt>llll (New York)<sup>1</sup></dt>
+      <dd>
+        <code>\{{date-short-llll date timeZone="America/New_York"}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-short-llll date timeZone="America/New_York"}}"</code>
+      </dd>
+      <dt>llll (Vancouver)<sup>1</sup></dt>
+      <dd>
+        <code>\{{date-short-llll date timeZone="America/Vancouver"}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-short-llll date timeZone="America/Vancouver"}}"</code>
+      </dd>
+    </dl>
+
+    <dl class="dl-horizontal">
+      <dt>llllz (Local)</dt>
+      <dd>
+        <code>\{{date-short-llllz date}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-short-llllz date}}"</code>
+      </dd>
+      <dt>llllz (New York)<sup>1</sup></dt>
+      <dd>
+        <code>\{{date-short-llllz date timeZone="America/New_York"}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-short-llllz date timeZone="America/New_York"}}"</code>
+      </dd>
+      <dt>llllz (Vancouver)<sup>1</sup></dt>
+      <dd>
+        <code>\{{date-short-llllz date timeZone="America/Vancouver"}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-short-llllz date timeZone="America/Vancouver"}}"</code>
       </dd>
     </dl>
 

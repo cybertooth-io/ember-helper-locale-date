@@ -7,7 +7,9 @@ import formatUtil from '../utils/format-util';
  */
 const defaultOptions = {
   hour: 'numeric',
-  minute: 'numeric'
+  minute: 'numeric',
+  second: 'numeric',
+  timeZoneName: 'short'
 };
 
 /**
@@ -16,8 +18,8 @@ const defaultOptions = {
  */
 const formatter = new Intl.DateTimeFormat(undefined, defaultOptions);
 
-export function dateFormatLt([date], options) {
+export function dateFormatLtsz([date], options) {
   return formatUtil(formatter, defaultOptions, date, options);
 }
 
-export default Ember.Helper.helper(dateFormatLt);
+export default Ember.Helper.helper(dateFormatLtsz);

@@ -1,13 +1,18 @@
 import Ember from 'ember';
 import formatUtil from '../utils/format-util';
 
+
 /**
  * The formatting options for the default Locale.
  * @type {{hour: string, minute: string}}
  */
 const defaultOptions = {
+  day: 'numeric',
   hour: 'numeric',
-  minute: 'numeric'
+  minute: 'numeric',
+  month: 'short',
+  weekday: 'short',
+  year: 'numeric'
 };
 
 /**
@@ -16,8 +21,8 @@ const defaultOptions = {
  */
 const formatter = new Intl.DateTimeFormat(undefined, defaultOptions);
 
-export function dateFormatLt([date], options) {
+export function dateShortLlll([date], options) {
   return formatUtil(formatter, defaultOptions, date, options);
 }
 
-export default Ember.Helper.helper(dateFormatLt);
+export default Ember.Helper.helper(dateShortLlll);
