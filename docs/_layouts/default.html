@@ -6,22 +6,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {% seo %}
+  <script src="https://use.fontawesome.com/b304573c6f.js"></script>
   <link href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" rel="stylesheet">
 </head>
 <body>
-<div class="container-lg px-3 my-5 markdown-body">
-  {% if site.title and site.title != page.title %}
-  <h1><a href="{{ '/' | absolute_url }}">{{ site.title }}</a></h1>
-  {% endif %}
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ '/' | absolute_url }}">
+        ember-helper-locale-date
+      </a>
+    </div>
 
-  {{ content }}
-
-  {% if site.github.private != true and site.github.license %}
-  <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
-    This site is open source. {% github_edit_link "Improve this page" %}.
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="{{ '/' | absolute_url }}">
+            Docs
+          </a>
+        </li>
+        <li>
+          <a href="http://ember-helper-locale-date.cybertooth.io" target="_blank">
+            Demo
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/cybertoothca/ember-helper-locale-date" target="_blank">
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://www.npmjs.com/package/ember-helper-locale-date" target="_blank">
+            npm
+          </a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+             aria-expanded="false">
+            Other Projects <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="http://ember-cli-bootstrap3-carousel.cybertooth.io/" target="_blank">
+                ember-cli-bootstrap3-carousel
+              </a>
+            </li>
+            <li>
+              <a href="http://ember-cli-bootstrap3-popover.cybertooth.io/" target="_blank">
+                ember-cli-bootstrap3-popover
+              </a>
+            </li>
+            <li>
+              <a href="http://ember-cli-date-textbox.cybertooth.io/" target="_blank">
+                ember-cli-date-textbox
+              </a>
+            </li>
+            <li>
+              <a href="http://ember-cli-marked-down.cybertooth.io/" target="_blank">
+                ember-cli-marked-down
+              </a>
+            </li>
+            <li>
+              <a href="http://ember-cli-text-support-mixins.cybertooth.io/" target="_blank">
+                ember-cli-text-support-mixins
+              </a>
+            </li>
+            <li>
+              <a href="http://ember-cli-textarea-autosize.cybertooth.io/" target="_blank">
+                ember-cli-textarea-autosize
+              </a>
+            </li>
+            <li>
+              <a href="http://ember-data-bootstrap3-forms.cybertooth.io/" target="_blank">
+                ember-data-bootstrap3-forms
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
-  {% endif %}
-</div>
+</nav>
+
+{{ content }}
+
+<hr/>
+
+<footer class="container">
+  This site is open source. {% github_edit_link "Improve this page" %}.
+</footer>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
 <script src="{{ 'assets/javascript/anchor-js/anchor.min.js' | relative_url }}"></script>
 <script> anchors.add();</script>
 </body>

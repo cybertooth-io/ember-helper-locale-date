@@ -18,9 +18,8 @@ export default Ember.Controller.extend({
    * Every second update the `now` date.
    */
   _observeMillis: Ember.observer('_millis', function () {
-    const self = this;
     Ember.run.later(() => {
-      Ember.trySet(self, '_millis', new Date().getTime());
+      Ember.trySet(this, '_millis', new Date().getTime());
     }, 250);
   })
 });

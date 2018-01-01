@@ -2,4 +2,15 @@
 ---
 
 //noinspection CssUnknownTarget
-@import "{{ site.theme }}";
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css';
+
+//noinspection CssUnknownTarget
+@import 'rouge';
+
+body {
+  padding-top: 70px;
+}
+
+footer {
+  margin-bottom: 10%;
+}

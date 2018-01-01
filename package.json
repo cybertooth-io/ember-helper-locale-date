@@ -1,6 +1,6 @@
 {
   "name": "ember-helper-locale-date",
-  "version": "0.1.0",
+  "version": "1.0.0-rc.1",
   "description": "Several helpers optimized to format dates natively according to the website visitor's locale.",
   "keywords": [
     "format",
@@ -78,6 +78,8 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
-    "demoURL": "http://docs.ember-helper-locale-date.cybertooth.io/#hbs"
+    "demoURL": "http://ember-helper-locale-date.cybertooth.io",
+    "docsURL": "http://docs.ember-helper-locale-date.cybertooth.io/#hbs",
+    "docURL": "http://docs.ember-helper-locale-date.cybertooth.io/#hbs"
   }
 }

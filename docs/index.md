@@ -1,12 +1,26 @@
-# ember-helper-locale-date
+<section markdown="1" class="container"> 
 
-[![npm version](http://badge.fury.io/js/ember-helper-locale-date.svg)](http://badge.fury.io/js/ember-helper-locale-date){:target="_blank"} ![downloads](https://img.shields.io/npm/dy/ember-helper-locale-date.svg) [![CircleCI](http://circleci.com/gh/cybertoothca/ember-helper-locale-date.svg?style=shield)](http://circleci.com/gh/cybertoothca/ember-helper-locale-date){:target="_blank"} [![Code Climate](http://codeclimate.com/github/cybertoothca/ember-helper-locale-date/badges/gpa.svg)](http://codeclimate.com/github/cybertoothca/ember-helper-locale-date){:target="_blank"} ![Dependencies](http://david-dm.org/cybertoothca/ember-helper-locale-date.svg) [![ember-observer-badge](http://emberobserver.com/badges/ember-helper-locale-date.svg)](http://emberobserver.com/addons/ember-helper-locale-date){:target="_blank"} [![License](http://img.shields.io/npm/l/ember-helper-locale-date.svg)](https://github.com/cybertoothca/ember-helper-locale-date/blob/master/LICENSE.md){:target="_blank"}
+![stability-stable](https://img.shields.io/badge/stability-stable-green.svg) [![npm version](http://badge.fury.io/js/ember-helper-locale-date.svg)](http://badge.fury.io/js/ember-helper-locale-date){:target="_blank"} ![downloads](https://img.shields.io/npm/dy/ember-helper-locale-date.svg) [![CircleCI](http://circleci.com/gh/cybertoothca/ember-helper-locale-date.svg?style=shield)](http://circleci.com/gh/cybertoothca/ember-helper-locale-date){:target="_blank"} [![Code Climate](http://codeclimate.com/github/cybertoothca/ember-helper-locale-date/badges/gpa.svg)](http://codeclimate.com/github/cybertoothca/ember-helper-locale-date){:target="_blank"} ![Dependencies](http://david-dm.org/cybertoothca/ember-helper-locale-date.svg) [![ember-observer-badge](http://emberobserver.com/badges/ember-helper-locale-date.svg)](http://emberobserver.com/addons/ember-helper-locale-date){:target="_blank"} [![License](http://img.shields.io/npm/l/ember-helper-locale-date.svg)](https://github.com/cybertoothca/ember-helper-locale-date/blob/master/LICENSE.md){:target="_blank"}
+
+</section>
+
+----
+
+<section markdown="1" class="container"> 
+
+## Purpose
 
 These helpers are optimized to natively format dates according to the website visitor's locale.  Singleton 
 `Intl.DateTimeFormat` instances are used for all basic formatting.  Once you pass options into
 the helper all optimization is tossed as the date 
 instance's `toLocaleString()` method is invoked instead of the singleton `Intl.DateTimeFormat`.
 `toLocaleString()`.
+
+</section>
+
+----
+
+<section markdown="1" class="container"> 
 
 ## Requirements
 
@@ -21,13 +35,19 @@ object.  Check out the browser compatibility chart at the bottom of
 [this page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat){:target="_blank"}
 for more information.
 
+</section>
+
+----
+
+<section markdown="1" class="container"> 
+
 ## Installation
 
 ```bash
 ember install ember-helper-locale-date
 ```
 
-## Upgrading
+### Upgrading
 
 When working through the Ember upgrade process, I recommend completely re-installing this
 add-on in order to retrieve the latest version.
@@ -35,6 +55,12 @@ add-on in order to retrieve the latest version.
 ```bash
 ember install ember-helper-locale-date
 ```
+
+</section>
+
+----
+
+<section markdown="1" class="container"> 
 
 ## Usage
 
@@ -44,7 +70,8 @@ to use options as all optimizations are thrown out the window the moment an opti
 
 ### HBS
  
-Here are some examples of using the helper in your hbs files: 
+The [demo website](http://ember-helper-locale-date.cybertooth.io)
+has a number of examples of the different helpers. 
 
 #### Empty Strings Returned For Non-Dates
 
@@ -52,42 +79,10 @@ Regardless of the helper, non-date arguments will return empty string.
 
 ```handlebars {% raw %}
 {{date-format-lt}}  {{!-- "" --}}
+
 {{date-format-l "abc"}}  {{!-- "" --}}
+
 {{date-format-llll 123}}  {{!-- "" --}}
-``` {% endraw %}
-
-#### Standard Formatters
-
-The long-hand formatting based on the website vistor's locale and timezone.  Assume for these examples
-that the website vistor's locale is "en_US" and their timezone is "America/New_York".
-
-You may recognize that these helpers are akin to MomentJs' localized format names (e.g. LT, LTS, LL, etc.).
-
-```handlebars {% raw %}
-{{!-- !!!For these examples!!! --}}
-{{!-- Assume the date argument is September 11, 2001 12:46:40 UTC (`new Date(Date.UTC(2001, 8, 11, 12, 46, 40))`) --}}
-{{!-- Assume your locale is "en_US" --}}
-{{!-- Assume your system timezone is "America/New_York" --}}
-
-{{date-format-lt date}}  {{!-- "8:46 AM" --}}
-
-{{date-format-ltz date}}  {{!-- "8:46 AM EDT" --}}
-
-{{date-format-lts date}}  {{!-- "8:46:40 AM" --}}
-
-{{date-format-ltsz date}}  {{!-- "8:46:40 AM EDT" --}}
-
-{{date-format-l date}}  {{!-- "09/11/2001" --}}
-
-{{date-format-ll date}}  {{!-- "September 11, 2001" --}}
-
-{{date-format-lll date}}  {{!-- "September 11, 2001 8:46 AM" --}}
-
-{{date-format-lllz date}}  {{!-- "September 11, 2001 8:46 AM EDT" --}}
-
-{{date-format-llll date}}  {{!-- "Thursday, September 11, 2001 8:46 AM" --}}
-
-{{date-format-llllz date}}  {{!-- "Thursday, September 11, 2001 8:46 AM EDT" --}}
 ``` {% endraw %}
 
 ### JS
@@ -101,19 +96,13 @@ vistor's locale is "en_US" and their timezone is "America/New_York".
 import { dateFormatLt } from 'ember-helper-locale-date/helpers/date-format-lt';
 // ... somewhere in your js:
 dateFormatLt(new Date(Date.UTC(2001, 8, 11, 12, 46, 40))); // "8:46 AM"
-
-// using the decimalFormat helper
-import { decimalFormat } from 'ember-helper-locale-date/helpers/decimal-format';
-// ... somewhere in your js:
-decimalFormat(123456); // "123,456"
-decimalFormat(123456, { useGrouping: false }); // "123456"
-decimalFormat(123.456789); // "123.457"
-
-// using the percentFormat helper
-import { percentFormat } from 'ember-helper-locale-date/helpers/percent-format';
-// ... somewhere in your js:
-percentFormat(0.123); // "12%"
 ```
+
+</section>
+
+----
+
+<section markdown="1" class="container"> 
 
 ## Options
 
@@ -190,6 +179,12 @@ The default value for each date-time component property is undefined, but if all
 <small>_The aforementioned options are derived from 
 [`Intl.DateTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat)._</small>
 
+</section>
+
+----
+
+<section markdown="1" class="container"> 
+
 # Tested Against
 
 [![ember-lts-2.4](https://img.shields.io/badge/ember--try-ember--lts--2.4-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-helper-locale-date)
@@ -199,3 +194,5 @@ The default value for each date-time component property is undefined, but if all
 [![ember-release](https://img.shields.io/badge/ember--try-ember--release-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-helper-locale-date)
 [![ember-beta](https://img.shields.io/badge/ember--try-ember--beta-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-helper-locale-date)
 [![ember-canary](https://img.shields.io/badge/ember--try-ember--canary-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-helper-locale-date)
+
+</section>
