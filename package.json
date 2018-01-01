@@ -41,7 +41,8 @@
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.3.0"
+    "ember-cli-babel": "^6.3.0",
+    "ember-cli-htmlbars": "^2.0.1"
   },
   "devDependencies": {
     "bootswatch": "^3.3.7",
@@ -55,9 +56,9 @@
     "ember-cli-deploy-build": "^1.1.1",
     "ember-cli-deploy-gzip": "^1.0.1",
     "ember-cli-deploy-s3": "^1.1.0",
+    "ember-cli-document-title": "^0.3.3",
     "ember-cli-eslint": "^3.0.0",
     "ember-cli-font-awesome-sass": "^1.0.4",
-    "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^0.4.3",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-qunit": "^4.0.0",
