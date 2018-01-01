@@ -1,4 +1,6 @@
-<section markdown="1" class="container"> 
+<section markdown="1" class="container">
+
+# Documentation 
 
 ![stability-stable](https://img.shields.io/badge/stability-stable-green.svg) [![npm version](http://badge.fury.io/js/ember-helper-locale-date.svg)](http://badge.fury.io/js/ember-helper-locale-date){:target="_blank"} ![downloads](https://img.shields.io/npm/dy/ember-helper-locale-date.svg) [![CircleCI](http://circleci.com/gh/cybertoothca/ember-helper-locale-date.svg?style=shield)](http://circleci.com/gh/cybertoothca/ember-helper-locale-date){:target="_blank"} [![Code Climate](http://codeclimate.com/github/cybertoothca/ember-helper-locale-date/badges/gpa.svg)](http://codeclimate.com/github/cybertoothca/ember-helper-locale-date){:target="_blank"} ![Dependencies](http://david-dm.org/cybertoothca/ember-helper-locale-date.svg) [![ember-observer-badge](http://emberobserver.com/badges/ember-helper-locale-date.svg)](http://emberobserver.com/addons/ember-helper-locale-date){:target="_blank"} [![License](http://img.shields.io/npm/l/ember-helper-locale-date.svg)](https://github.com/cybertoothca/ember-helper-locale-date/blob/master/LICENSE.md){:target="_blank"}
 
@@ -11,10 +13,9 @@
 ## Purpose
 
 These helpers are optimized to natively format dates according to the website visitor's locale.  Singleton 
-`Intl.DateTimeFormat` instances are used for all basic formatting.  Once you pass options into
-the helper all optimization is tossed as the date 
-instance's `toLocaleString()` method is invoked instead of the singleton `Intl.DateTimeFormat`.
-`toLocaleString()`.
+`Intl.DateTimeFormat` instances are used for basic formatting.  Once you pass options into
+the helper all optimization is tossed as the date instance's `toLocaleString()` method is invoked 
+rather than the more desirable `Intl.DateTimeFormat` instance's `format()` method.
 
 </section>
 
