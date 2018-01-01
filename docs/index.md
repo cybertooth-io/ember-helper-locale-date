@@ -1,6 +1,6 @@
 # ember-helper-locale-date
 
-[![npm version](http://badge.fury.io/js/ember-helper-locale-date.svg)](http://badge.fury.io/js/ember-helper-locale-date) ![downloads](https://img.shields.io/npm/dy/ember-helper-locale-date.svg) [![CircleCI](http://circleci.com/gh/cybertoothca/ember-helper-locale-date.svg?style=shield)](http://circleci.com/gh/cybertoothca/ember-helper-locale-date) [![Code Climate](http://codeclimate.com/github/cybertoothca/ember-helper-locale-date/badges/gpa.svg)](http://codeclimate.com/github/cybertoothca/ember-helper-locale-date) ![Dependencies](http://david-dm.org/cybertoothca/ember-helper-locale-date.svg) [![ember-observer-badge](http://emberobserver.com/badges/ember-helper-locale-date.svg)](http://emberobserver.com/addons/ember-helper-locale-date) [![License](http://img.shields.io/npm/l/ember-helper-locale-date.svg)](https://github.com/cybertoothca/ember-helper-locale-date/blob/master/LICENSE.md)
+[![npm version](http://badge.fury.io/js/ember-helper-locale-date.svg)](http://badge.fury.io/js/ember-helper-locale-date){:target="_blank"} ![downloads](https://img.shields.io/npm/dy/ember-helper-locale-date.svg) [![CircleCI](http://circleci.com/gh/cybertoothca/ember-helper-locale-date.svg?style=shield)](http://circleci.com/gh/cybertoothca/ember-helper-locale-date){:target="_blank"} [![Code Climate](http://codeclimate.com/github/cybertoothca/ember-helper-locale-date/badges/gpa.svg)](http://codeclimate.com/github/cybertoothca/ember-helper-locale-date){:target="_blank"} ![Dependencies](http://david-dm.org/cybertoothca/ember-helper-locale-date.svg) [![ember-observer-badge](http://emberobserver.com/badges/ember-helper-locale-date.svg)](http://emberobserver.com/addons/ember-helper-locale-date){:target="_blank"} [![License](http://img.shields.io/npm/l/ember-helper-locale-date.svg)](https://github.com/cybertoothca/ember-helper-locale-date/blob/master/LICENSE.md){:target="_blank"}
 
 These helpers are optimized to natively format dates according to the website visitor's locale.  Singleton 
 `Intl.DateTimeFormat` instances are used for all basic formatting.  Once you pass options into
@@ -15,11 +15,11 @@ instance's `toLocaleString()` method is invoked instead of the singleton `Intl.D
 
 ### Dependencies
 
-All modern browsers support the 
-[`Intl.DateTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat)
-object and this add-on depends on that module and object.  Check out the 
-[browser compatibility](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat) 
-chart at the bottom of this page for more information.
+Any modern browser that support the 
+[`Intl.DateTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat){:target="_blank"}
+object.  Check out the browser compatibility chart at the bottom of 
+[this page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat){:target="_blank"}
+for more information.
 
 ## Installation
 

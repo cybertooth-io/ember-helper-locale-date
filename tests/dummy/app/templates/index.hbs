@@ -1,0 +1,150 @@
+<section>
+  <div class="container">
+    <h2>Installation</h2>
+    <pre>$ ember install ember-helper-locale-date</pre>
+  </div>
+</section>
+<hr/>
+<section>
+  <div class="container">
+    <h2>Examples</h2>
+    <dl class="dl-horizontal">
+      <dt>Locale</dt>
+      <dd>{{locale}}</dd>
+      <dt>Date (UTC)</dt>
+      <dd>{{utc}}</dd>
+      <dt>Date (Local)</dt>
+      <dd>{{date}}</dd>
+    </dl>
+    <dl class="dl-horizontal">
+      <dt>LT</dt>
+      <dd>
+        <code>\{{date-format-lt date}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-lt date}}"</code>
+      </dd>
+      <dt>LTS</dt>
+      <dd>
+        <code>\{{date-format-lts date}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-lts date}}"</code>
+      </dd>
+    </dl>
+    <dl class="dl-horizontal">
+      <dt>L</dt>
+      <dd>
+        <code>\{{date-format-l date}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-l date}}"</code>
+      </dd>
+      <dt>LL</dt>
+      <dd>
+        <code>\{{date-format-ll date}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-ll date}}"</code>
+      </dd>
+    </dl>
+
+    <dl class="dl-horizontal">
+      <dt>LLL</dt>
+      <dd>
+        <code>\{{date-format-lll date}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-lll date}}"</code>
+      </dd>
+      <dt>LLL (New York)<sup>1</sup></dt>
+      <dd>
+        <code>\{{date-format-lll date timeZone="America/New_York"}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-lll date timeZone="America/New_York"}}"</code>
+      </dd>
+      <dt>LLL (Vancouver)<sup>1</sup></dt>
+      <dd>
+        <code>\{{date-format-lll date timeZone="America/Vancouver"}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-lll date timeZone="America/Vancouver"}}"</code>
+      </dd>
+    </dl>
+
+    <dl class="dl-horizontal">
+      <dt>LLLz (Local)</dt>
+      <dd>
+        <code>\{{date-format-lllz date}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-lllz date}}"</code>
+      </dd>
+      <dt>LLLz (New York)<sup>1</sup></dt>
+      <dd>
+        <code>\{{date-format-lllz date timeZone="America/New_York"}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-lllz date timeZone="America/New_York"}}"</code>
+      </dd>
+      <dt>LLLz (Vancouver)<sup>1</sup></dt>
+      <dd>
+        <code>\{{date-format-lllz date timeZone="America/Vancouver"}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-lllz date timeZone="America/Vancouver"}}"</code>
+      </dd>
+    </dl>
+
+    <dl class="dl-horizontal">
+      <dt>LLLL (Local)</dt>
+      <dd>
+        <code>\{{date-format-llll date}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-llll date}}"</code>
+      </dd>
+      <dt>LLLL (New York)<sup>1</sup></dt>
+      <dd>
+        <code>\{{date-format-llll date timeZone="America/New_York"}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-llll date timeZone="America/New_York"}}"</code>
+      </dd>
+      <dt>LLLL (Vancouver)<sup>1</sup></dt>
+      <dd>
+        <code>\{{date-format-llll date timeZone="America/Vancouver"}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-llll date timeZone="America/Vancouver"}}"</code>
+      </dd>
+    </dl>
+
+    <dl class="dl-horizontal">
+      <dt>LLLLz (Local)</dt>
+      <dd>
+        <code>\{{date-format-llllz date}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-llllz date}}"</code>
+      </dd>
+      <dt>LLLLz (New York)<sup>1</sup></dt>
+      <dd>
+        <code>\{{date-format-llllz date timeZone="America/New_York"}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-llllz date timeZone="America/New_York"}}"</code>
+      </dd>
+      <dt>LLLLz (Vancouver)<sup>1</sup></dt>
+      <dd>
+        <code>\{{date-format-llllz date timeZone="America/Vancouver"}}</code>
+        <i class="fa fa-fw fa-long-arrow-right"></i>
+        <code>"{{date-format-llllz date timeZone="America/Vancouver"}}"</code>
+      </dd>
+    </dl>
+
+    <div class="well">
+      <p>
+        <sup>1</sup> As you pass in options to the helper (e.g. the <code>timeZone</code>) the helper becomes
+        less <em>performant</em>. This really only matters when you're formatting large numbers of dates.
+      </p>
+    </div>
+  </div>
+</section>
+<hr>
+<section>
+  <div class="container">
+    <h2>Options</h2>
+    <p>
+      Check out the
+      <a href="http://docs.ember-helper-locale-date.cybertooth.io/#options" target="_blank">documentation</a>
+      for information about the options you can pass to these helpers.
+    </p>
+  </div>
+</section>
