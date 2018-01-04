@@ -2101,9 +2101,9 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-cybertooth-ember-addon-components@^0.1.0-alpha.0:
-  version "0.1.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/cybertooth-ember-addon-components/-/cybertooth-ember-addon-components-0.1.0-alpha.0.tgz#a0c6491df81fbe53ab07986e3a286d9154a0e832"
+cybertooth-ember-addon-components@^0.1.0-alpha.1:
+  version "0.1.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/cybertooth-ember-addon-components/-/cybertooth-ember-addon-components-0.1.0-alpha.1.tgz#723883d4d3c974dcbb7de6674edabbbb032f076b"
   dependencies:
     ember-cli-babel "^6.3.0"
     ember-cli-htmlbars "^2.0.1"

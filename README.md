@@ -4,7 +4,7 @@
 
 ## [DOCS](http://docs.ember-helper-locale-date.cybertooth.io)
 
-## [DEMO](http://ember-helper-locale-date.cybertooth.io)
+## [DEMO](http://demo.ember-helper-locale-date.cybertooth.io)
 
 ### Tested Against
 

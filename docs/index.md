@@ -73,7 +73,7 @@ to use options as all optimizations are thrown out the window the moment an opti
  
 
 Here are a few examples; **the
-[demo website](http://ember-helper-locale-date.cybertooth.io) 
+[demo website](http://demo.ember-helper-locale-date.cybertooth.io) 
 has a full set of live examples for each of the helpers:**
 
 ```handlebars {% raw %}
