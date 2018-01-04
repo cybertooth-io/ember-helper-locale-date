@@ -1,8 +1,8 @@
-<section markdown="1" class="container">
+<section markdown="1" class="container js-has-badges">
 
 # Documentation 
 
-![stability-stable](https://img.shields.io/badge/stability-stable-green.svg) [![npm version](http://badge.fury.io/js/ember-helper-locale-date.svg)](http://badge.fury.io/js/ember-helper-locale-date){:target="_blank"} ![downloads](https://img.shields.io/npm/dy/ember-helper-locale-date.svg) [![CircleCI](http://circleci.com/gh/cybertoothca/ember-helper-locale-date.svg?style=shield)](http://circleci.com/gh/cybertoothca/ember-helper-locale-date){:target="_blank"} [![Code Climate](http://codeclimate.com/github/cybertoothca/ember-helper-locale-date/badges/gpa.svg)](http://codeclimate.com/github/cybertoothca/ember-helper-locale-date){:target="_blank"} ![Dependencies](http://david-dm.org/cybertoothca/ember-helper-locale-date.svg) [![ember-observer-badge](http://emberobserver.com/badges/ember-helper-locale-date.svg)](http://emberobserver.com/addons/ember-helper-locale-date){:target="_blank"} [![License](http://img.shields.io/npm/l/ember-helper-locale-date.svg)](https://github.com/cybertoothca/ember-helper-locale-date/blob/master/LICENSE.md){:target="_blank"}
+![stability-stable](https://img.shields.io/badge/stability-stable-green.svg) [![npm version](http://badge.fury.io/js/ember-helper-locale-date.svg)](http://badge.fury.io/js/ember-helper-locale-date){:target="_blank"} ![downloads](https://img.shields.io/npm/dy/ember-helper-locale-date.svg) [![CircleCI](http://circleci.com/gh/cybertoothca/ember-helper-locale-date.svg?style=shield)](http://circleci.com/gh/cybertoothca/ember-helper-locale-date){:target="_blank"} [![Code Climate](http://codeclimate.com/github/cybertoothca/ember-helper-locale-date/badges/gpa.svg)](http://codeclimate.com/github/cybertoothca/ember-helper-locale-date){:target="_blank"} ![Dependencies](http://david-dm.org/cybertoothca/ember-helper-locale-date.svg) [![ember-observer-badge](http://emberobserver.com/badges/ember-helper-locale-date.svg)](http://emberobserver.com/addons/ember-helper-locale-date){:target="_blank"} ![Ember-1.13.0+](https://embadge.io/v1/badge.svg?start=1.13.0) [![License](http://img.shields.io/npm/l/ember-helper-locale-date.svg)](https://github.com/cybertoothca/ember-helper-locale-date/blob/master/LICENSE.md){:target="_blank"}
 
 </section>
 
@@ -71,19 +71,31 @@ to use options as all optimizations are thrown out the window the moment an opti
 
 ### HBS
  
-The [demo website](http://ember-helper-locale-date.cybertooth.io)
-has a number of examples of the different helpers. 
+
+Here are a few examples; **the
+[demo website](http://ember-helper-locale-date.cybertooth.io) 
+has a full set of live examples for each of the helpers:**
+
+```handlebars {% raw %}
+{{date-format-lt date}}     {{!-- "11:13 PM" --}}
+
+{{date-format-ltsz date}}   {{!-- "11:13:50 PM MST" --}}
+
+{{date-format-ll date}}     {{!-- "January 3, 2018" --}}
+
+{{date-short-lll date}}     {{!-- "Jan 3, 2018, 11:16 PM" --}}
+``` {% endraw %}
 
 #### Empty Strings Returned For Non-Dates
 
 Regardless of the helper, non-date arguments will return empty string.
 
 ```handlebars {% raw %}
-{{date-format-lt}}  {{!-- "" --}}
+{{date-format-lt}}          {{!-- "" --}}
 
-{{date-short-l "abc"}}  {{!-- "" --}}
+{{date-short-l "abc"}}      {{!-- "" --}}
 
-{{date-format-llll 123}}  {{!-- "" --}}
+{{date-format-llll 123}}    {{!-- "" --}}
 ``` {% endraw %}
 
 ### JS

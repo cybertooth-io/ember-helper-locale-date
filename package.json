@@ -47,6 +47,7 @@
   "devDependencies": {
     "bootswatch": "^3.3.7",
     "broccoli-asset-rev": "^2.4.5",
+    "cybertooth-ember-addon-components": "^0.1.0-alpha.0",
     "ember-ajax": "^3.0.0",
     "ember-cli": "~2.14.2",
     "ember-cli-app-version": "^3.1.3",
@@ -79,8 +80,7 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
-    "demoURL": "http://ember-helper-locale-date.cybertooth.io",
-    "docsURL": "http://docs.ember-helper-locale-date.cybertooth.io",
-    "docURL": "http://docs.ember-helper-locale-date.cybertooth.io"
+    "demoURL": "http://demo.ember-helper-locale-date.cybertooth.io",
+    "docsURL": "http://docs.ember-helper-locale-date.cybertooth.io"
   }
 }
