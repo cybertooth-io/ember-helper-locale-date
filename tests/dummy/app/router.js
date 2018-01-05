@@ -7,6 +7,12 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('performance', function () {
+    this.route('helper');
+    this.route('momentjs');
+    this.route('helper-with-options');
+    this.route('sugar-date');
+  });
 });
 
 export default Router;

@@ -1,0 +1,26 @@
+<fieldset>
+  <legend>
+    <span class="label label-warning pull-right">
+      {{decimal-format result}}ms
+    </span>
+    sugar-date-full
+  </legend>
+  <div class="alert alert-warning">
+    {{#link-to "performance.index" class="pull-right"}}
+      <i class="fa fa-refresh"></i>
+      Reset
+    {{/link-to}}
+    <p>
+      Using:
+      <br/>
+      <code>\{{sugar-date-full date}}</code>
+    </p>
+    <p>
+      This is a simple helper I created for this demo that formats a native date
+      using the <code>Sugar.Date.full(date)</code> function {{decimal-format model.dates.length}} times.
+    </p>
+  </div>
+  {{#each model.dates as |date|}}
+    <p>{{sugar-date-full date}}</p>
+  {{/each}}
+</fieldset>

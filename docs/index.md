@@ -28,6 +28,11 @@ This technique for optimal formatting is part of
 **[the MDN documentation related to the `toLocaleString()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString#Performance){:target="_blank"}** 
 function.
 
+
+#### [Performance](http://demo.ember-helper-locale-date.cybertooth.io/performance)
+
+http://demo.ember-helper-locale-date.cybertooth.io/performance
+
 </section>
 
 ----

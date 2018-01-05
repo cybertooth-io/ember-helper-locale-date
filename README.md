@@ -9,6 +9,8 @@ These helpers are optimized to natively format dates according to the website vi
 the helper all optimization is tossed as the date instance's `toLocaleString()` method is invoked 
 rather than the more desirable `Intl.DateTimeFormat` instance's `format()` method.
 
+_Check out the docs for further information..._
+
 ## [DOCS](http://docs.ember-helper-locale-date.cybertooth.io)
 
 http://docs.ember-helper-locale-date.cybertooth.io
@@ -16,6 +18,10 @@ http://docs.ember-helper-locale-date.cybertooth.io
 ## [DEMO](http://demo.ember-helper-locale-date.cybertooth.io)
 
 http://demo.ember-helper-locale-date.cybertooth.io
+
+## [PERFORMANCE](http://demo.ember-helper-locale-date.cybertooth.io/performance)
+
+http://demo.ember-helper-locale-date.cybertooth.io/performance
 
 ### Tested Against
 

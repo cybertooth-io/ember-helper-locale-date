@@ -1,0 +1,25 @@
+<fieldset>
+  <legend>
+    <span class="label label-warning pull-right">
+      {{decimal-format result}}ms
+    </span>
+    ember-moment
+  </legend>
+  <div class="alert alert-warning">
+    {{#link-to "performance.index" class="pull-right"}}
+      <i class="fa fa-refresh"></i>
+      Reset
+    {{/link-to}}
+    <p>
+      Using:
+      <br/>
+      <code>\{{moment-format date 'LLLL'}}</code>
+    </p>
+    <p>
+      This is akin to calling the <code>moment.format()</code> function {{decimal-format model.dates.length}} times.
+    </p>
+  </div>
+  {{#each model.dates as |date|}}
+    <p>{{moment-format date 'LLLL'}}</p>
+  {{/each}}
+</fieldset>

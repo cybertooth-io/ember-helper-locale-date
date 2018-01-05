@@ -1,0 +1,26 @@
+<fieldset>
+  <legend>
+    <span class="label label-info pull-right">
+      {{decimal-format result}}ms
+    </span>
+    ember-helper-locale-date (+option)
+  </legend>
+  <div class="alert alert-info">
+    {{#link-to "performance.index" class="pull-right"}}
+      <i class="fa fa-refresh"></i>
+      Reset
+    {{/link-to}}
+    <p>
+      Using:
+      <br/>
+      <code>\{{date-format-llll date timeZone="America/Vancouver"}}</code>
+    </p>
+    <p>
+      This is akin to calling the <code>Date.toLocaleString()</code>
+      function {{decimal-format model.dates.length}} times.
+    </p>
+  </div>
+  {{#each model.dates as |date|}}
+    <p>{{date-format-llll date timeZone="America/Vancouver"}}</p>
+  {{/each}}
+</fieldset>

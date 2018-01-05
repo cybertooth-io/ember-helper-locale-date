@@ -1,0 +1,51 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5">
+        <fieldset>
+          <legend>Let's Format!</legend>
+          <form {{action "changeHowMany" howManyInput on="submit"}} class="form">
+            <div class="form-group">
+              <label for="js-number-of-dates" class="control-label">
+                How Many Dates
+              </label>
+              <div class="input-group">
+                {{input-text autofocus=true class="form-control text-right" type="number" value=howManyInput}}
+                <span class="input-group-btn"><button class="btn btn-primary" type="submit">Go!</button></span>
+              </div>
+              <p class="help-block">
+                {{decimal-format model.dates.length}} dates were randomly generated.
+              </p>
+            </div>
+            <div class="form-group">
+              <label class="control-label">Render With...</label>
+              <p>
+                {{#link-to "performance.helper" class="btn btn-success btn-lg btn-block"}}
+                  ember-helper-locale-date
+                {{/link-to}}
+              </p>
+              <p>
+                {{#link-to "performance.helper-with-options" class="btn btn-info btn-lg btn-block"}}
+                  ember-helper-locale-date (+option)
+                {{/link-to}}
+              </p>
+              <p>
+                {{#link-to "performance.momentjs" class="btn btn-warning btn-lg btn-block"}}
+                  ember-moment
+                {{/link-to}}
+              </p>
+              <p>
+                {{#link-to "performance.sugar-date" class="btn btn-warning btn-lg btn-block"}}
+                  sugar-date-full
+                {{/link-to}}
+              </p>
+            </div>
+          </form>
+        </fieldset>
+      </div>
+      <div class="col-sm-7">
+        {{outlet}}
+      </div>
+    </div>
+  </div>
+</section>
