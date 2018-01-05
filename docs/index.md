@@ -17,6 +17,17 @@ These helpers are optimized to natively format dates according to the website vi
 the helper all optimization is tossed as the date instance's `toLocaleString()` method is invoked 
 rather than the more desirable `Intl.DateTimeFormat` instance's `format()` method.
 
+### Why So Many Different Helpers?
+
+Under the hood, each helper owns a Singleton `Intl.DateTimeFormat` instance that is solely 
+responsible for formatting a date to a specific style.  Because of this, the helper re-uses
+the `Intl.DateTimeFormat` over and over again.  This is what makes it the optimal native 
+formatter.
+
+This technique for optimal formatting is part of 
+**[the MDN documentation related to the `toLocaleString()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString#Performance){:target="_blank"}** 
+function.
+
 </section>
 
 ----
@@ -25,16 +36,16 @@ rather than the more desirable `Intl.DateTimeFormat` instance's `format()` metho
 
 ## Requirements
 
-* Ember >= 1.13.0
-* A modern browser
+* **Ember >= 1.13.0**
+* **A modern browser** - Any modern browser that support the 
+[`Intl.DateTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat){:target="_blank"}
+object.  Check out the browser compatibility chart at the bottom of 
+**[this MDN page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat#Browser_compatibility){:target="_blank"}**
+for more information.
 
 ### Dependencies
 
-Any modern browser that support the 
-[`Intl.DateTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat){:target="_blank"}
-object.  Check out the browser compatibility chart at the bottom of 
-[this page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat){:target="_blank"}
-for more information.
+_None_.
 
 </section>
 
@@ -203,8 +214,11 @@ The representation of the time zone name. Possible values are "short", "long".
 
 The default value for each date-time component property is undefined, but if all component properties are undefined, then year, month, and day are assumed to be "numeric".
 
-<small>_The aforementioned options are derived from 
-[`Intl.DateTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat)._</small>
+<div class="well" markdown="1">
+[The aforementioned options are a copy-paste from the MDN docs concerning the `Intl.DateTimeFormat` object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat){:target="_blank"}.
+
+I suggest checking back to the original docs periodically for potential updates to these options.
+</div>
 
 </section>
 
@@ -212,8 +226,9 @@ The default value for each date-time component property is undefined, but if all
 
 <section markdown="1" class="container"> 
 
-# Tested Against
+## Tested Against
 
+[![ember-lts-1.13.0](https://img.shields.io/badge/ember--try-ember--lts--1.13.0-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-helper-locale-date)
 [![ember-lts-2.4](https://img.shields.io/badge/ember--try-ember--lts--2.4-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-helper-locale-date)
 [![ember-lts-2.8](https://img.shields.io/badge/ember--try-ember--lts--2.8-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-helper-locale-date)
 [![ember-lts-2.12](https://img.shields.io/badge/ember--try-ember--lts--2.12-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-helper-locale-date)

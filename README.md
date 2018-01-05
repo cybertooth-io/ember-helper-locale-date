@@ -2,12 +2,24 @@
 
 ![stability-stable](https://img.shields.io/badge/stability-stable-green.svg) [![npm version](http://badge.fury.io/js/ember-helper-locale-date.svg)](http://badge.fury.io/js/ember-helper-locale-date) ![downloads](https://img.shields.io/npm/dy/ember-helper-locale-date.svg) [![CircleCI](http://circleci.com/gh/cybertoothca/ember-helper-locale-date.svg?style=shield)](http://circleci.com/gh/cybertoothca/ember-helper-locale-date) [![Code Climate](http://codeclimate.com/github/cybertoothca/ember-helper-locale-date/badges/gpa.svg)](http://codeclimate.com/github/cybertoothca/ember-helper-locale-date) ![Dependencies](http://david-dm.org/cybertoothca/ember-helper-locale-date.svg) [![ember-observer-badge](http://emberobserver.com/badges/ember-helper-locale-date.svg)](http://emberobserver.com/addons/ember-helper-locale-date) ![Ember-1.13.0+](https://embadge.io/v1/badge.svg?start=1.13.0) [![License](http://img.shields.io/npm/l/ember-helper-locale-date.svg)](https://github.com/cybertoothca/ember-helper-locale-date/blob/master/LICENSE.md)
 
+## Purpose
+
+These helpers are optimized to natively format dates according to the website visitor's locale.  Singleton 
+`Intl.DateTimeFormat` instances are used for basic formatting.  Once you pass options into
+the helper all optimization is tossed as the date instance's `toLocaleString()` method is invoked 
+rather than the more desirable `Intl.DateTimeFormat` instance's `format()` method.
+
 ## [DOCS](http://docs.ember-helper-locale-date.cybertooth.io)
+
+http://docs.ember-helper-locale-date.cybertooth.io
 
 ## [DEMO](http://demo.ember-helper-locale-date.cybertooth.io)
 
+http://demo.ember-helper-locale-date.cybertooth.io
+
 ### Tested Against
 
+[![ember-lts-1.13.0](https://img.shields.io/badge/ember--try-ember--lts--1.13.0-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-helper-locale-date)
 [![ember-lts-2.4](https://img.shields.io/badge/ember--try-ember--lts--2.4-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-helper-locale-date)
 [![ember-lts-2.8](https://img.shields.io/badge/ember--try-ember--lts--2.8-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-helper-locale-date)
 [![ember-lts-2.12](https://img.shields.io/badge/ember--try-ember--lts--2.12-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-helper-locale-date)
