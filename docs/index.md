@@ -85,12 +85,15 @@ Use the `date-format-lt`, `date-format-lts`, `date-format-l`, etc... helpers tha
 date argument and any number of key=value options. Options are described below.  It is frowned upon
 to use options as all optimizations are thrown out the window the moment an option is passed.
 
+### Demo
+
+[http://demo.ember-helper-locale-date.cybertooth.io](http://demo.ember-helper-locale-date.cybertooth.io)
+
 ### HBS
  
-
-Here are a few examples; **the
+Here are a few examples; **see the
 [demo website](http://demo.ember-helper-locale-date.cybertooth.io) 
-has a full set of live examples for each of the helpers:**
+for the full set of helpers with live examples:**
 
 ```handlebars {% raw %}
 {{date-format-lt date}}     {{!-- "11:13 PM" --}}
