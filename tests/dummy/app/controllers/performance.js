@@ -4,7 +4,7 @@ export default Ember.Controller.extend({
   actions: {
     changeHowMany(howManyInput) {
       this.set('howMany', howManyInput);
-      return true;
+      return false;
     }
   },
 
