@@ -31,7 +31,7 @@ function.
 
 #### [Performance](http://demo.ember-helper-locale-date.cybertooth.io/performance)
 
-http://demo.ember-helper-locale-date.cybertooth.io/performance
+[http://demo.ember-helper-locale-date.cybertooth.io/performance](http://demo.ember-helper-locale-date.cybertooth.io/performance)
 
 </section>
 
