@@ -223,7 +223,7 @@ The representation of the time zone name. Possible values are "short", "long".
 The default value for each date-time component property is undefined, but if all component properties are undefined, then year, month, and day are assumed to be "numeric".
 
 <div class="well" markdown="1">
-[The aforementioned options are a copy-paste from the MDN docs concerning the `Intl.DateTimeFormat` object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat){:target="_blank"}.
+[The aforementioned options are a copy-paste from the MDN docs concerning the `Intl.DateTimeFormat` object's parameterss](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat#Parameters){:target="_blank"}.
 
 I suggest checking back to the original docs periodically for potential updates to these options.
 </div>
