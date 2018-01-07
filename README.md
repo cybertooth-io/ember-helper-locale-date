@@ -11,17 +11,17 @@ rather than the more desirable `Intl.DateTimeFormat` instance's `format()` metho
 
 _Check out the docs for further information..._
 
-## [DOCS](http://docs.ember-helper-locale-date.cybertooth.io)
+## DOCS
 
 http://docs.ember-helper-locale-date.cybertooth.io
 
-## [DEMO](http://demo.ember-helper-locale-date.cybertooth.io)
+## DEMO
 
 http://demo.ember-helper-locale-date.cybertooth.io
 
-## [PERFORMANCE](http://demo.ember-helper-locale-date.cybertooth.io/performance)
+## PERFORMANCE
 
-http://demo.ember-helper-locale-date.cybertooth.io/performance
+http://demo.ember-helper-locale-date.cybertooth.io/#/performance
 
 ### Tested Against
 

@@ -29,9 +29,9 @@ This technique for optimal formatting is part of
 function.
 
 
-#### [Performance](http://demo.ember-helper-locale-date.cybertooth.io/performance)
+#### Performance
 
-[http://demo.ember-helper-locale-date.cybertooth.io/performance](http://demo.ember-helper-locale-date.cybertooth.io/performance)
+[http://demo.ember-helper-locale-date.cybertooth.io/#/performance](http://demo.ember-helper-locale-date.cybertooth.io/#/performance)
 
 </section>
 
