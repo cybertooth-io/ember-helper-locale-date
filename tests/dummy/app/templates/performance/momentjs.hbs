@@ -11,12 +11,13 @@
       Reset
     {{/link-to}}
     <p>
-      Using:
+      Using <code>ember-moment</code> helper:
       <br/>
       <code>\{{moment-format date 'LLLL'}}</code>
     </p>
     <p>
-      This is akin to calling the <code>moment.format()</code> function {{decimal-format model.dates.length}} times.
+      This is akin to calling the <code>moment.format('LLLL')</code> function {{decimal-format model.dates.length}}
+      times.
     </p>
   </div>
   {{#each model.dates as |date|}}
