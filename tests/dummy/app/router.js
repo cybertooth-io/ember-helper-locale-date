@@ -6,12 +6,16 @@ const Router = Ember.Router.extend({
   rootURL: config.rootURL
 });
 
-Router.map(function() {
+Router.map(function () {
   this.route('performance', function () {
     this.route('helper');
     this.route('momentjs');
     this.route('helper-with-options');
     this.route('sugar-date');
+    this.route('ember-intl');
+  });
+
+  this.route('performace', function () {
   });
 });
 
