@@ -42,6 +42,9 @@ jobs:
     - checkout
     - restore_cache:
         keys:
+        - bower-cache-{{ .Branch }}-{{ checksum "bower.json" }}
+    - restore_cache:
+        keys:
         - v1-deps-{{ .Branch }}-{{ checksum "yarn.lock" }}
         - v1-deps-{{ .Branch }}-
         - v1-deps-
@@ -60,6 +63,9 @@ jobs:
     - checkout
     - restore_cache:
         keys:
+        - bower-cache-{{ .Branch }}-{{ checksum "bower.json" }}
+    - restore_cache:
+        keys:
         - v1-deps-{{ .Branch }}-{{ checksum "yarn.lock" }}
         - v1-deps-{{ .Branch }}-
         - v1-deps-
@@ -71,6 +77,9 @@ jobs:
     - image: circleci/node:6.14.4-browsers
     steps:
     - checkout
+    - restore_cache:
+        keys:
+        - bower-cache-{{ .Branch }}-{{ checksum "bower.json" }}
     - restore_cache:
         keys:
         - v1-deps-{{ .Branch }}-{{ checksum "yarn.lock" }}
@@ -86,6 +95,9 @@ jobs:
     - checkout
     - restore_cache:
         keys:
+        - bower-cache-{{ .Branch }}-{{ checksum "bower.json" }}
+    - restore_cache:
+        keys:
         - v1-deps-{{ .Branch }}-{{ checksum "yarn.lock" }}
         - v1-deps-{{ .Branch }}-
         - v1-deps-
@@ -97,6 +109,9 @@ jobs:
     - image: circleci/node:6.14.4-browsers
     steps:
     - checkout
+    - restore_cache:
+        keys:
+        - bower-cache-{{ .Branch }}-{{ checksum "bower.json" }}
     - restore_cache:
         keys:
         - v1-deps-{{ .Branch }}-{{ checksum "yarn.lock" }}
@@ -112,6 +127,9 @@ jobs:
     - checkout
     - restore_cache:
         keys:
+        - bower-cache-{{ .Branch }}-{{ checksum "bower.json" }}
+    - restore_cache:
+        keys:
         - v1-deps-{{ .Branch }}-{{ checksum "yarn.lock" }}
         - v1-deps-{{ .Branch }}-
         - v1-deps-
@@ -123,6 +141,9 @@ jobs:
     - image: circleci/node:6.14.4-browsers
     steps:
     - checkout
+    - restore_cache:
+        keys:
+        - bower-cache-{{ .Branch }}-{{ checksum "bower.json" }}
     - restore_cache:
         keys:
         - v1-deps-{{ .Branch }}-{{ checksum "yarn.lock" }}
