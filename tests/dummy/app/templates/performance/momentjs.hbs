@@ -12,7 +12,7 @@
     {{/link-to}}
     <p>
       Using <code>ember-moment</code> helper:
-      <br/>
+      <br>
       <code>\{{moment-format date 'LLLL'}}</code>
     </p>
     <p>
@@ -21,6 +21,6 @@
     </p>
   </div>
   {{#each model.dates as |date|}}
-    <p>{{moment-format date 'LLLL'}}</p>
+    <p>{{moment-format date "LLLL"}}</p>
   {{/each}}
 </fieldset>
