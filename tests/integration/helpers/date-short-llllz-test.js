@@ -1,7 +1,7 @@
-import { module, test } from 'qunit';
+import { render } from '@ember/test-helpers';
 import { setupRenderingTest } from 'ember-qunit';
-import { render, find } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
+import { module, test } from 'qunit';
 
 module('helper:date-short-llllz', function(hooks) {
   setupRenderingTest(hooks);
@@ -9,7 +9,7 @@ module('helper:date-short-llllz', function(hooks) {
   test('when date is missing', async function(assert) {
     await render(hbs`{{date-short-llllz}}`);
 
-    assert.equal(find('*').textContent.trim(), '');
+    assert.dom('*').hasText('');
   });
 
   test('when date is undefined', async function(assert) {
@@ -17,7 +17,7 @@ module('helper:date-short-llllz', function(hooks) {
 
     await render(hbs`{{date-short-llllz date}}`);
 
-    assert.equal(find('*').textContent.trim(), '');
+    assert.dom('*').hasText('');
   });
 
   test('when date is a string', async function(assert) {
@@ -25,7 +25,7 @@ module('helper:date-short-llllz', function(hooks) {
 
     await render(hbs`{{date-short-llllz date}}`);
 
-    assert.equal(find('*').textContent.trim(), '');
+    assert.dom('*').hasText('');
   });
 
   test('when date is a number', async function(assert) {
@@ -33,7 +33,7 @@ module('helper:date-short-llllz', function(hooks) {
 
     await render(hbs`{{date-short-llllz date}}`);
 
-    assert.equal(find('*').textContent.trim(), '');
+    assert.dom('*').hasText('');
   });
 
   test('when default formatted', async function(assert) {
@@ -41,16 +41,15 @@ module('helper:date-short-llllz', function(hooks) {
 
     await render(hbs`{{date-short-llllz date}}`);
 
-    assert.equal(find('*').textContent.trim(),
-      new Date(Date.UTC(2001, 8, 11, 12, 46, 40)).toLocaleString(undefined, {
-        day: 'numeric',
-        hour: 'numeric',
-        minute: 'numeric',
-        month: 'short',
-        timeZoneName: 'short',
-        weekday: 'short',
-        year: 'numeric'
-      }));
+    assert.dom('*').hasText(new Date(Date.UTC(2001, 8, 11, 12, 46, 40)).toLocaleString(undefined, {
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+      month: 'short',
+      timeZoneName: 'short',
+      weekday: 'short',
+      year: 'numeric'
+    }));
   });
 
   test('when custom formatted', async function(assert) {
@@ -58,16 +57,15 @@ module('helper:date-short-llllz', function(hooks) {
 
     await render(hbs`{{date-short-llllz date timeZone="Pacific/Honolulu"}}`);
 
-    assert.equal(find('*').textContent.trim(),
-      new Date(Date.UTC(2001, 8, 11, 12, 46, 40)).toLocaleString(undefined, {
-        day: 'numeric',
-        hour: 'numeric',
-        minute: 'numeric',
-        month: 'short',
-        timeZone: 'Pacific/Honolulu',
-        timeZoneName: 'short',
-        weekday: 'short',
-        year: 'numeric'
-      }));
+    assert.dom('*').hasText(new Date(Date.UTC(2001, 8, 11, 12, 46, 40)).toLocaleString(undefined, {
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+      month: 'short',
+      timeZone: 'Pacific/Honolulu',
+      timeZoneName: 'short',
+      weekday: 'short',
+      year: 'numeric'
+    }));
   });
 });
