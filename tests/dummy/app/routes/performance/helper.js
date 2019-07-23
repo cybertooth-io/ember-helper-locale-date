@@ -1,6 +1,7 @@
-import Ember from 'ember';
+import { schedule } from '@ember/runloop';
+import Route from '@ember/routing/route';
 
-export default Ember.Route.extend({
+export default Route.extend({
   actions: {
     didTransition() {
       this.set('controller.didTransitionMillis', Date.now());
@@ -9,7 +10,7 @@ export default Ember.Route.extend({
 
   setupController: function (controller, model) {
     this._super(controller, model);
-    Ember.run.schedule('afterRender', this, function () {
+    schedule('afterRender', this, function () {
       controller.set('afterRenderMillis', Date.now());
     });
   }

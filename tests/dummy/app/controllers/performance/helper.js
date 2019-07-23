@@ -1,11 +1,12 @@
-import Ember from 'ember';
+import { computed } from '@ember/object';
+import Controller from '@ember/controller';
 
-export default Ember.Controller.extend({
+export default Controller.extend({
   afterRenderMillis: 0,
 
   didTransitionMillis: 0,
 
-  result: Ember.computed('afterRenderMillis', 'didTransitionMillis', function () {
+  result: computed('afterRenderMillis', 'didTransitionMillis', function () {
     return this.get('afterRenderMillis') - this.get('didTransitionMillis');
   })
 });

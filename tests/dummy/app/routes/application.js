@@ -1,11 +1,12 @@
-import Ember from 'ember';
+import { htmlSafe } from '@ember/template';
+import Route from '@ember/routing/route';
 
-export default Ember.Route.extend({
+export default Route.extend({
   title(tokens) {
     return tokens
       .reverse()
       .map(function (token) {
-        return Ember.String.htmlSafe(token.toString());
+        return htmlSafe(token.toString());
       })
       .join(' - ');
   },

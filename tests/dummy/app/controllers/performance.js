@@ -1,6 +1,7 @@
-import Ember from 'ember';
+import { oneWay } from '@ember/object/computed';
+import Controller from '@ember/controller';
 
-export default Ember.Controller.extend({
+export default Controller.extend({
   actions: {
     changeHowMany(howManyInput) {
       this.set('howMany', howManyInput);
@@ -10,5 +11,5 @@ export default Ember.Controller.extend({
 
   howMany: 500,
 
-  howManyInput: Ember.computed.oneWay('howMany')
+  howManyInput: oneWay('howMany')
 });

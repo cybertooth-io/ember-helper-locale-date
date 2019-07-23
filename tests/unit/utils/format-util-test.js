@@ -1,5 +1,5 @@
 import formatUtil from 'dummy/utils/format-util';
-import {module, test} from 'qunit';
+import { module, test } from 'qunit';
 
 module('Unit | Utility | format util');
 

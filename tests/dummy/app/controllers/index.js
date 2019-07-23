@@ -1,25 +1,29 @@
-import Ember from 'ember';
+import { later } from '@ember/runloop';
+import { on } from '@ember/object/evented';
+import { computed, observer, trySet } from '@ember/object';
+import Controller from '@ember/controller';
 
-export default Ember.Controller.extend({
+export default Controller.extend({
+  // eslint-disable-next-line ember/avoid-leaking-state-in-ember-objects
   locale: window.navigator.userLanguage || window.navigator.language,
-  date: Ember.computed('_millis', function () {
+  date: computed('_millis', function () {
     return new Date(this.get('_millis'));
   }),
-  utc: Ember.computed('date', function () {
+  utc: computed('date', function () {
     return this.get('date').toUTCString();
   }),
   /**
    * Initialize millis to the current millis.
    */
-  _initializeMillis: Ember.on('init', function () {
+  _initializeMillis: on('init', function () {
     this.set('_millis', new Date().getTime());
   }),
   /**
    * Every second update the `now` date.
    */
-  _observeMillis: Ember.observer('_millis', function () {
-    Ember.run.later(() => {
-      Ember.trySet(this, '_millis', new Date().getTime());
+  _observeMillis: observer('_millis', function () {
+    later(() => {
+      trySet(this, '_millis', new Date().getTime());
     }, 250);
   })
 });

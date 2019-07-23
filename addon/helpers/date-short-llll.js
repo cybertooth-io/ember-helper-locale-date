@@ -1,4 +1,4 @@
-import Ember from 'ember';
+import { helper as buildHelper } from '@ember/component/helper';
 import formatUtil from '../utils/format-util';
 
 
@@ -25,4 +25,4 @@ export function dateShortLlll([date], options) {
   return formatUtil(formatter, defaultOptions, date, options);
 }
 
-export default Ember.Helper.helper(dateShortLlll);
+export default buildHelper(dateShortLlll);
