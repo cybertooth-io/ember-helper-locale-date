@@ -1,6 +1,6 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
-import { render } from '@ember/test-helpers';
+import { render, find } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
 module('helper:date-short-ll', function(hooks) {
@@ -9,7 +9,7 @@ module('helper:date-short-ll', function(hooks) {
   test('when date is missing', async function(assert) {
     await render(hbs`{{date-short-ll}}`);
 
-    assert.equal(this.$().text().trim(), '');
+    assert.equal(find('*').textContent.trim(), '');
   });
 
   test('when date is undefined', async function(assert) {
@@ -17,7 +17,7 @@ module('helper:date-short-ll', function(hooks) {
 
     await render(hbs`{{date-short-ll date}}`);
 
-    assert.equal(this.$().text().trim(), '');
+    assert.equal(find('*').textContent.trim(), '');
   });
 
   test('when date is a string', async function(assert) {
@@ -25,7 +25,7 @@ module('helper:date-short-ll', function(hooks) {
 
     await render(hbs`{{date-short-ll date}}`);
 
-    assert.equal(this.$().text().trim(), '');
+    assert.equal(find('*').textContent.trim(), '');
   });
 
   test('when date is a number', async function(assert) {
@@ -33,7 +33,7 @@ module('helper:date-short-ll', function(hooks) {
 
     await render(hbs`{{date-short-ll date}}`);
 
-    assert.equal(this.$().text().trim(), '');
+    assert.equal(find('*').textContent.trim(), '');
   });
 
   test('when default formatted', async function(assert) {
@@ -41,7 +41,7 @@ module('helper:date-short-ll', function(hooks) {
 
     await render(hbs`{{date-short-ll date}}`);
 
-    assert.equal(this.$().text().trim(),
+    assert.equal(find('*').textContent.trim(),
       new Date(Date.UTC(2001, 8, 11, 12, 46, 40)).toLocaleString(undefined, {
         day: 'numeric',
         month: 'short',
@@ -54,7 +54,7 @@ module('helper:date-short-ll', function(hooks) {
 
     await render(hbs`{{date-short-ll date timeZoneName="short"}}`);
 
-    assert.equal(this.$().text().trim(),
+    assert.equal(find('*').textContent.trim(),
       new Date(Date.UTC(2001, 8, 11, 12, 46, 40)).toLocaleString(undefined, {
         day: 'numeric',
         month: 'short',
