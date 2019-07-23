@@ -1,39 +1,37 @@
-# ember-helper-locale-date
+my-addon
+==============================================================================
 
-![stability-stable](https://img.shields.io/badge/stability-stable-green.svg) [![npm version](http://badge.fury.io/js/ember-helper-locale-date.svg)](http://badge.fury.io/js/ember-helper-locale-date) ![downloads](https://img.shields.io/npm/dy/ember-helper-locale-date.svg) [![CircleCI](http://circleci.com/gh/cybertoothca/ember-helper-locale-date.svg?style=shield)](http://circleci.com/gh/cybertoothca/ember-helper-locale-date) [![Code Climate](http://codeclimate.com/github/cybertoothca/ember-helper-locale-date/badges/gpa.svg)](http://codeclimate.com/github/cybertoothca/ember-helper-locale-date) ![Dependencies](http://david-dm.org/cybertoothca/ember-helper-locale-date.svg) [![ember-observer-badge](http://emberobserver.com/badges/ember-helper-locale-date.svg)](http://emberobserver.com/addons/ember-helper-locale-date) ![Ember-1.13.0+](https://embadge.io/v1/badge.svg?start=1.13.0) [![License](http://img.shields.io/npm/l/ember-helper-locale-date.svg)](https://github.com/cybertoothca/ember-helper-locale-date/blob/master/LICENSE.md)
+[Short description of the addon.]
 
-## Purpose
 
-These helpers are optimized to natively format dates according to the website visitor's locale.  Singleton 
-`Intl.DateTimeFormat` instances are used for basic formatting.  Once you pass options into
-the helper all optimization is tossed as the date instance's `toLocaleString()` method is invoked 
-rather than the more desirable `Intl.DateTimeFormat` instance's `format()` method.
+Compatibility
+------------------------------------------------------------------------------
 
-_Check out the docs for further information..._
+* Ember.js v2.18 or above
+* Ember CLI v2.13 or above
 
-## DOCS
 
-http://docs.ember-helper-locale-date.cybertooth.io
+Installation
+------------------------------------------------------------------------------
 
-## DEMO
+```
+ember install my-addon
+```
 
-http://demo.ember-helper-locale-date.cybertooth.io
 
-## PERFORMANCE
+Usage
+------------------------------------------------------------------------------
 
-http://demo.ember-helper-locale-date.cybertooth.io/#/performance
+[Longer description of how to use the addon in apps.]
 
-### Tested Against
 
-[![ember-lts-1.13.0](https://img.shields.io/badge/ember--try-ember--lts--1.13.0-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-helper-locale-date)
-[![ember-lts-2.4](https://img.shields.io/badge/ember--try-ember--lts--2.4-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-helper-locale-date)
-[![ember-lts-2.8](https://img.shields.io/badge/ember--try-ember--lts--2.8-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-helper-locale-date)
-[![ember-lts-2.12](https://img.shields.io/badge/ember--try-ember--lts--2.12-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-helper-locale-date)
+Contributing
+------------------------------------------------------------------------------
 
-[![ember-release](https://img.shields.io/badge/ember--try-ember--release-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-helper-locale-date)
-[![ember-beta](https://img.shields.io/badge/ember--try-ember--beta-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-helper-locale-date)
-[![ember-canary](https://img.shields.io/badge/ember--try-ember--canary-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-helper-locale-date)
+See the [Contributing](CONTRIBUTING.md) guide for details.
 
-# Collaboration Information
 
-This README outlines the details of collaborating on this Ember add-on.
+License
+------------------------------------------------------------------------------
+
+This project is licensed under the [MIT License](LICENSE.md).
