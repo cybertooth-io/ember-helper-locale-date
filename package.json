@@ -5,10 +5,13 @@
   "keywords": [
     "format",
     "locale",
+    "intl",
+    "timezone",
+    "ember-intl",
     "Intl.DateTimeFormat",
     "time format",
     "date format",
-    "cybertooth",
+    "cybertooth.io",
     "ember-addon"
   ],
   "repository": {
@@ -50,20 +53,12 @@
   "devDependencies": {
     "@ember/jquery": "^0.6.1",
     "@ember/optional-features": "^0.7.0",
-    "bootswatch": "^3.3.7",
     "broccoli-asset-rev": "^3.0.0",
-    "cybertooth-ember-addon-components": "^0.1.0-alpha.4",
     "ember-cli": "~3.11.0",
-    "ember-cli-app-version": "^3.1.3",
-    "ember-cli-bootstrap3-sass": "^1.0.6",
     "ember-cli-dependency-checker": "^3.1.0",
     "ember-cli-deploy": "^1.0.2",
     "ember-cli-deploy-build": "^1.1.1",
-    "ember-cli-deploy-gzip": "^1.0.1",
-    "ember-cli-deploy-s3": "^1.1.0",
-    "ember-cli-document-title": "^0.3.3",
     "ember-cli-eslint": "^5.1.0",
-    "ember-cli-font-awesome-sass": "^1.0.4",
     "ember-cli-htmlbars-inline-precompile": "^2.1.0",
     "ember-cli-inject-live-reload": "^1.8.2",
     "ember-cli-moment-shim": "^3.5.0",
@@ -71,34 +66,28 @@
     "ember-cli-sass": "^7.1.3",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-template-lint": "^1.0.0-beta.1",
-    "ember-cli-text-support-mixins": "^1.1.2",
     "ember-cli-uglify": "^2.1.0",
     "ember-disable-prototype-extensions": "^1.1.3",
     "ember-export-application-global": "^2.0.0",
-    "ember-helper-locale-number": "^1.0.0",
     "ember-intl": "^2.31.1",
     "ember-load-initializers": "^2.0.0",
     "ember-maybe-import-regenerator": "^0.1.6",
-    "ember-moment": "^7.5.0",
     "ember-qunit": "^4.4.1",
     "ember-resolver": "^5.0.1",
     "ember-source": "~3.11.1",
     "ember-source-channel-url": "^1.1.0",
-    "ember-sugar-date-shim": "^1.0.0",
     "ember-try": "^1.0.0",
     "eslint-plugin-ember": "^6.2.0",
     "eslint-plugin-node": "^9.0.1",
-    "keyevent": "^1.1.0",
     "loader.js": "^4.7.0",
-    "qunit-dom": "^0.8.4",
-    "sugar-date": "^2.0.4"
+    "qunit-dom": "^0.8.4"
   },
   "engines": {
     "node": "8.* || >= 10.*"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
-    "demoURL": "http://demo.ember-helper-locale-date.cybertooth.io",
-    "docsURL": "http://docs.ember-helper-locale-date.cybertooth.io"
-  }
+    "demoURL": "https://cybertooth-io.github.io/ember-helper-locale-date/"
+  },
+  "homepage": "https://cybertooth-io.github.io/ember-helper-locale-date"
 }
