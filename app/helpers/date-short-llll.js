@@ -1,1 +1,1 @@
-export {default, dateShortLlll} from 'ember-helper-locale-date/helpers/date-short-llll';
+export { default, dateShortLlll } from 'ember-helper-locale-date/helpers/date-short-llll';

@@ -1,9 +1,10 @@
 import formatUtil from 'dummy/utils/format-util';
 import { module, test } from 'qunit';
 
+const formatter = new Intl.DateTimeFormat(undefined);
+const testDate = new Date(Date.UTC(2001, 8, 11, 12, 46, 40));
+
 module('Unit | Utility | format util', function() {
-  const formatter = new Intl.DateTimeFormat(undefined);
-  const testDate = new Date(Date.UTC(2001, 8, 11, 12, 46, 40));
 
   test('it works', function(assert) {
     let result = formatUtil();

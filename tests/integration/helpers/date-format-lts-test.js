@@ -44,7 +44,7 @@ module('helper:date-format-lts', function(hooks) {
     assert.dom('').hasText(new Date(Date.UTC(2001, 8, 11, 12, 46, 40)).toLocaleString(undefined, {
       hour: 'numeric',
       minute: 'numeric',
-      second: 'numeric',
+      second: 'numeric'
     }));
   });
 

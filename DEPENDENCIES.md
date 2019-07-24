@@ -26,6 +26,9 @@
 # https://github.com/FortAwesome/ember-fontawesome
 yarn add -D @fortawesome/free-solid-svg-icons
 
+# https://github.com/DockYard/eslint-plugin-ember-suave
+yarn add -D eslint-plugin-ember-suave
+
 # Allows CircleCI to push code coverage information
 # https://github.com/codeclimate/test-reporter
 yarn add -D codeclimate-test-reporter
