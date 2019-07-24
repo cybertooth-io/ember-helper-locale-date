@@ -9,7 +9,7 @@ module('helper:date-format-lllz', function(hooks) {
   test('when date is missing', async function(assert) {
     await render(hbs`{{date-format-lllz}}`);
 
-    assert.dom('*').hasText('');
+    assert.dom('').hasText('');
   });
 
   test('when date is undefined', async function(assert) {
@@ -17,7 +17,7 @@ module('helper:date-format-lllz', function(hooks) {
 
     await render(hbs`{{date-format-lllz date}}`);
 
-    assert.dom('*').hasText('');
+    assert.dom('').hasText('');
   });
 
   test('when date is a string', async function(assert) {
@@ -25,7 +25,7 @@ module('helper:date-format-lllz', function(hooks) {
 
     await render(hbs`{{date-format-lllz date}}`);
 
-    assert.dom('*').hasText('');
+    assert.dom('').hasText('');
   });
 
   test('when date is a number', async function(assert) {
@@ -33,7 +33,7 @@ module('helper:date-format-lllz', function(hooks) {
 
     await render(hbs`{{date-format-lllz date}}`);
 
-    assert.dom('*').hasText('');
+    assert.dom('').hasText('');
   });
 
   test('when default formatted', async function(assert) {
@@ -41,7 +41,7 @@ module('helper:date-format-lllz', function(hooks) {
 
     await render(hbs`{{date-format-lllz date}}`);
 
-    assert.dom('*').hasText(new Date(Date.UTC(2001, 8, 11, 12, 46, 40)).toLocaleString(undefined, {
+    assert.dom('').hasText(new Date(Date.UTC(2001, 8, 11, 12, 46, 40)).toLocaleString(undefined, {
       day: 'numeric',
       hour: 'numeric',
       minute: 'numeric',
@@ -56,7 +56,7 @@ module('helper:date-format-lllz', function(hooks) {
 
     await render(hbs`{{date-format-lllz date year="2-digit"}}`);
 
-    assert.dom('*').hasText(new Date(Date.UTC(2001, 8, 11, 12, 46, 40)).toLocaleString(undefined, {
+    assert.dom('').hasText(new Date(Date.UTC(2001, 8, 11, 12, 46, 40)).toLocaleString(undefined, {
       day: 'numeric',
       hour: 'numeric',
       minute: 'numeric',
