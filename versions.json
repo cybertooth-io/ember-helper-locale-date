@@ -1,0 +1,14 @@
+{
+  "upgrading-everything-2.x": {
+    "path": "versions/upgrading-everything-2.x",
+    "name": "upgrading-everything-2.x",
+    "sha": "08e742f6db550c85e3b1a6fd892b511411320449",
+    "tag": null
+  },
+  "-latest": {
+    "path": "",
+    "name": "Latest",
+    "sha": "08e742f6db550c85e3b1a6fd892b511411320449",
+    "tag": null
+  }
+}

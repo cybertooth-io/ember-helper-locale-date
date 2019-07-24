@@ -1,0 +1,1 @@
+{"jsonapi":{"version":"1.0"},"data":{"type":"project","id":"ember-helper-locale-date","attributes":{"name":"ember-helper-locale-date","version":"2.0.0-rc.0","navigationIndex":[]},"relationships":{"modules":{"data":[]}}}}
