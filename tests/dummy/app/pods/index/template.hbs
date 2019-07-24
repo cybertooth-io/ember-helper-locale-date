@@ -1,0 +1,73 @@
+{{docs-hero}}
+
+<div class="docs-container docs-md">
+  <section class="docs-max-w-md docs-mx-auto docs-pb-8">
+    <h2 class="docs-flex docs-items-center docs-mt-8 docs-h2">
+      Motivation
+    </h2>
+
+    <aside>Looking to get started? {{docs-link "Click here" "docs"}}.</aside>
+
+    <p>
+      The `ember-intl` addon and all of it's provided functionality is wonderful. What is
+      challenging with the `Intl` specification, is the ability to optimally and
+      consistently format dates and time in long, medium, short, ... formats. Something akin
+      to the locale-formatting that `momentjs` has provided us for years.
+    </p>
+
+    <p>
+      As a result of this challenge, we created this simple set of Ember helpers to
+      format dates consistently and with performance at top of mind. Here are a few
+      examples of the helpers you get with this addon:
+    </p>
+
+    <ul class="fa-ul">
+      <li>
+        <span class="fa-li">{{fa-icon "code"}}</span>
+        <code>\{{date-format-l now}}</code>
+        {{fa-icon "long-arrow-alt-right" fixedWidth=true}}
+        {{date-format-l now}}
+      </li>
+      <li>
+        <span class="fa-li">{{fa-icon "code"}}</span>
+        <code>\{{date-format-llllz now}}</code>
+        {{fa-icon "long-arrow-alt-right" fixedWidth=true}}
+        {{date-format-llllz now}}
+      </li>
+      <li>
+        <span class="fa-li">{{fa-icon "code"}}</span>
+        <code>\{{date-short-lllz now}}</code>
+        {{fa-icon "long-arrow-alt-right" fixedWidth=true}}
+        {{date-short-lllz now}}
+      </li>
+    </ul>
+
+    <h2 class="docs-flex docs-items-center docs-mt-8 docs-h2">
+      Discover An Issue?
+    </h2>
+
+    <p>
+      <a class="docs-md__a"
+         href="https://github.com/cybertooth-io/ember-helper-locale-date/issues"
+         rel="noopener"
+         target="_blank">
+        Search and raise
+      </a>
+    </p>
+
+    <div class="docs-my-16 docs-text-right">
+      {{#link-to
+          "docs"
+          class="docs-bg-grey-darkest hover:docs-bg-black docs-text-white docs-py-2 docs-px-4 docs-no-underline docs-rounded"
+      }}
+        Read the docs →
+      {{/link-to}}
+    </div>
+  </section>
+</div>
+
+<div class="docs-container docs-md">
+  <a href="https://cybertooth.io" rel="noopener" target="_blank">
+    <img alt="Cybertooth.io's wordmark logo" class="docs-w-32" src="assets/images/cybertooth.io-wordmark.png">
+  </a>
+</div>

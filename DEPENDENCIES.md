@@ -1,6 +1,10 @@
 # Dependencies
 
 ```bash
+# Font Awesome Ember helpers
+# https://github.com/FortAwesome/ember-fontawesome
+./node_modules/.bin/ember  install @fortawesome/ember-fontawesome
+
 # Polyfill angle bracket invocation into 2.x builds
 # https://github.com/rwjblue/ember-angle-bracket-invocation-polyfill
 ./node_modules/.bin/ember install ember-angle-bracket-invocation-polyfill
@@ -17,6 +21,10 @@
 # Runs coverage report when `COVERAGE=true`
 # https://github.com/kategengler/ember-cli-code-coverage
 ./node_modules/.bin/ember install ember-cli-code-coverage@^1.0.0-beta.8
+
+# Font Awesome solid icons (free)
+# https://github.com/FortAwesome/ember-fontawesome
+yarn add -D @fortawesome/free-solid-svg-icons
 
 # Allows CircleCI to push code coverage information
 # https://github.com/codeclimate/test-reporter
