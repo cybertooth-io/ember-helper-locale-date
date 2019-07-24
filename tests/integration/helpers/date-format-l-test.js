@@ -1,63 +1,63 @@
-import {moduleForComponent, test} from 'ember-qunit';
+import { render } from '@ember/test-helpers';
+import { setupRenderingTest } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
+import { module, test } from 'qunit';
 
-moduleForComponent('date-format-l', 'helper:date-format-l', {
-  integration: true
-});
+module('helper:date-format-l', function(hooks) {
+  setupRenderingTest(hooks);
 
-test('when date is missing', function (assert) {
-  this.render(hbs`{{date-format-l}}`);
+  test('when date is missing', async function(assert) {
+    await render(hbs`{{date-format-l}}`);
 
-  assert.equal(this.$().text().trim(), '');
-});
+    assert.dom('').hasText('');
+  });
 
-test('when date is undefined', function (assert) {
-  this.set('date', undefined);
+  test('when date is undefined', async function(assert) {
+    this.set('date', undefined);
 
-  this.render(hbs`{{date-format-l date}}`);
+    await render(hbs`{{date-format-l date}}`);
 
-  assert.equal(this.$().text().trim(), '');
-});
+    assert.dom('').hasText('');
+  });
 
-test('when date is a string', function (assert) {
-  this.set('date', 'abc');
+  test('when date is a string', async function(assert) {
+    this.set('date', 'abc');
 
-  this.render(hbs`{{date-format-l date}}`);
+    await render(hbs`{{date-format-l date}}`);
 
-  assert.equal(this.$().text().trim(), '');
-});
+    assert.dom('').hasText('');
+  });
 
-test('when date is a number', function (assert) {
-  this.set('date', 123);
+  test('when date is a number', async function(assert) {
+    this.set('date', 123);
 
-  this.render(hbs`{{date-format-l date}}`);
+    await render(hbs`{{date-format-l date}}`);
 
-  assert.equal(this.$().text().trim(), '');
-});
+    assert.dom('').hasText('');
+  });
 
-test('when default formatted', function (assert) {
-  this.set('date', new Date(Date.UTC(2001, 8, 11, 12, 46, 40)));  // September 11, 2001 8:46:40 EDT
+  test('when default formatted', async function(assert) {
+    this.set('date', new Date(Date.UTC(2001, 8, 11, 12, 46, 40)));  // September 11, 2001 8:46:40 EDT
 
-  this.render(hbs`{{date-format-l date}}`);
+    await render(hbs`{{date-format-l date}}`);
 
-  assert.equal(this.$().text().trim(),
-    new Date(Date.UTC(2001, 8, 11, 12, 46, 40)).toLocaleString(undefined, {
+    assert.dom('').hasText(new Date(Date.UTC(2001, 8, 11, 12, 46, 40)).toLocaleString(undefined, {
       day: '2-digit',
       month: '2-digit',
       year: 'numeric'
     }));
-});
+  });
 
-test('when custom formatted', function (assert) {
-  this.set('date', new Date(Date.UTC(2001, 8, 11, 12, 46, 40)));  // September 11, 2001 8:46:40 EDT
+  test('when custom formatted', async function(assert) {
+    this.set('date', new Date(Date.UTC(2001, 8, 11, 12, 46, 40)));  // September 11, 2001 8:46:40 EDT
 
-  this.render(hbs`{{date-format-l date timeZoneName="short"}}`);
+    await render(hbs`{{date-format-l date timeZoneName="short"}}`);
 
-  assert.equal(this.$().text().trim(),
-    new Date(Date.UTC(2001, 8, 11, 12, 46, 40)).toLocaleString(undefined, {
+    assert.dom('').hasText(new Date(Date.UTC(2001, 8, 11, 12, 46, 40)).toLocaleString(undefined, {
       day: '2-digit',
       month: '2-digit',
       timeZoneName: 'short',
       year: 'numeric'
     }));
+  });
 });

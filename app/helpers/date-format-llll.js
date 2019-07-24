@@ -1,1 +1,1 @@
-export {default, dateFormatLlll} from 'ember-helper-locale-date/helpers/date-format-llll';
+export { default, dateFormatLlll } from 'ember-helper-locale-date/helpers/date-format-llll';

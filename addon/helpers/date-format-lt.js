@@ -1,5 +1,7 @@
-import Ember from 'ember';
-import formatUtil from '../utils/format-util';
+/** @documenter yuidoc */
+
+import { helper as buildHelper } from '@ember/component/helper';
+import formatUtil from 'ember-helper-locale-date/utils/format-util';
 
 /**
  * The formatting options for the default Locale.
@@ -11,13 +13,13 @@ const defaultOptions = {
 };
 
 /**
- * Instantiate a basic NumberFormat in the browser's locale that will be used for basic formatting.
+ * Instantiate a `Intl.DateTimeFormat` in the browser's locale that will be used for basic formatting.
  * @type {Intl.NumberFormat}
  */
-const formatter = new Intl.DateTimeFormat(undefined, defaultOptions);
+const formatter = new Intl.DateTimeFormat(window.navigator.language, defaultOptions);
 
 export function dateFormatLt([date], options) {
   return formatUtil(formatter, defaultOptions, date, options);
 }
 
-export default Ember.Helper.helper(dateFormatLt);
+export default buildHelper(dateFormatLt);

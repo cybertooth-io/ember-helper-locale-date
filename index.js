@@ -1,6 +1,5 @@
-/* eslint-env node */
 'use strict';
 
 module.exports = {
-  name: 'ember-helper-locale-date'
+  name: require('./package').name
 };

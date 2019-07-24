@@ -1,21 +1,17 @@
-import Ember from 'ember';
+import AddonDocsRouter, { docsRoute } from 'ember-cli-addon-docs/router';
 import config from './config/environment';
 
-const Router = Ember.Router.extend({
+const Router = AddonDocsRouter.extend({
   location: config.locationType,
   rootURL: config.rootURL
 });
 
-Router.map(function () {
-  this.route('performance', function () {
-    this.route('helper');
-    this.route('momentjs');
-    this.route('helper-with-options');
-    this.route('sugar-date');
-    this.route('ember-intl');
+Router.map(function() {
+  docsRoute(this, function() {
   });
-
-  this.route('performace', function () {
+  this.route('docs', function() {
+    this.route('usage');
+    this.route('benefits');
   });
 });
 
