@@ -9,10 +9,10 @@
 Typically run:
 
 ```bash
-$ ember deploy production
+$ ./node_modules/.bin/ember deploy production
 ```
 
 If you need to force the current branch to be the LATEST:
 ```bash
-$ ADDON_DOCS_UPDATE_LATEST=true ember deploy production
+$ ADDON_DOCS_UPDATE_LATEST=true ./node_modules/.bin/ember deploy production
 ```
