@@ -1,7 +1,7 @@
 # ember-helper-locale-date
 
-Optimized Date & Time formatting using a cached `Intl.DateTimeFormat` and a set of common long
-and short format patterns.
+Optimized Date & Time formatting using cached `Intl.DateTimeFormat` instances configured to 
+a common set of long and short format patterns.
 
 [![CircleCI](https://circleci.com/gh/cybertooth-io/ember-helper-locale-date.svg?style=svg)](https://circleci.com/gh/cybertooth-io/ember-helper-locale-date)
 
