@@ -1,6 +1,6 @@
 {
   "name": "ember-helper-locale-date",
-  "version": "2.0.0-rc.0",
+  "version": "2.0.0-rc.1",
   "description": "Optimized Date & Time formatting using cached `Intl.DateTimeFormat` instances configured to a common set of long and short format patterns.",
   "keywords": [
     "format",
