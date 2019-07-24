@@ -1,5 +1,8 @@
+import { computed } from '@ember/object';
 import Controller from '@ember/controller';
 
 export default Controller.extend({
-  now: new Date()
+  now: computed(function() {
+    return new Date();
+  })
 });
