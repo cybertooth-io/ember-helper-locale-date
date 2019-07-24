@@ -1,7 +1,7 @@
 /** @documenter yuidoc */
 
 import { helper as buildHelper } from '@ember/component/helper';
-import formatUtil from '../utils/format-util';
+import formatUtil from 'ember-helper-locale-date/utils/format-util';
 
 /**
  * The formatting options for the default Locale.
