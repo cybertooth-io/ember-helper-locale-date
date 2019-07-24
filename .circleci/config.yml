@@ -136,33 +136,33 @@ workflows:
       - test_default:
           requires:
             - yarn_and_cache
-#      - test_default_with_jquery:
-#          requires:
-#            - yarn_and_cache
-#      - test_release:
-#          requires:
-#            - yarn_and_cache
-#      - test_beta:
-#          requires:
-#            - yarn_and_cache
-#      - test_canary:
-#          requires:
-#            - yarn_and_cache
-#      - test_lts_3_8:
-#          requires:
-#            - yarn_and_cache
-#      - test_lts_3_4:
-#          requires:
-#            - yarn_and_cache
-#      - test_lts_2_18:
-#          requires:
-#            - yarn_and_cache
-#      - test_lts_2_16:
-#          requires:
-#            - yarn_and_cache
-#      - test_lts_2_12:
-#          requires:
-#            - yarn_and_cache
+      - test_default_with_jquery:
+          requires:
+            - yarn_and_cache
+      - test_release:
+          requires:
+            - yarn_and_cache
+      - test_beta:
+          requires:
+            - yarn_and_cache
+      - test_canary:
+          requires:
+            - yarn_and_cache
+      - test_lts_3_8:
+          requires:
+            - yarn_and_cache
+      - test_lts_3_4:
+          requires:
+            - yarn_and_cache
+      - test_lts_2_18:
+          requires:
+            - yarn_and_cache
+      - test_lts_2_16:
+          requires:
+            - yarn_and_cache
+      - test_lts_2_12:
+          requires:
+            - yarn_and_cache
 #    - test_lts_2_8:
 #        requires:
 #        - yarn_and_cache
