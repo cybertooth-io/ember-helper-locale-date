@@ -11,8 +11,8 @@ a common set of long and short format patterns.
 <!--
 ![ember-lts-2.4](https://img.shields.io/badge/ember--try-ember--lts--2.4-brightgreen.svg)
 ![ember-lts-2.8](https://img.shields.io/badge/ember--try-ember--lts--2.8-brightgreen.svg)
--->
 ![ember-lts-2.12](https://img.shields.io/badge/ember--try-ember--lts--2.12-brightgreen.svg)
+-->
 ![ember-lts-2.16](https://img.shields.io/badge/ember--try-ember--lts--2.16-brightgreen.svg)
 ![ember-lts-2.18](https://img.shields.io/badge/ember--try-ember--lts--2.18-brightgreen.svg)
 
