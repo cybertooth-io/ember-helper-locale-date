@@ -160,9 +160,9 @@ workflows:
       - test_lts_2_16:
           requires:
             - yarn_and_cache
-      - test_lts_2_12:
-          requires:
-            - yarn_and_cache
+#      - test_lts_2_12:
+#          requires:
+#            - yarn_and_cache
 #    - test_lts_2_8:
 #        requires:
 #        - yarn_and_cache
